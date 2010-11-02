@@ -19,5 +19,5 @@ if test ! -e $zf_lib; then
 fi
 
 g++ -m32 -g -c src/libjzenfire.cpp -o src/libjzenfire.o -I$zf_inc_dir -I$JAVA_HOME/include -I$JAVA_HOME/include/linux
-g++ -m32 -shared -o libjzenfire.so  src/libjzenfire.o $zf_lib -lpthread
+g++ -m32 -shared -o libjzenfire.so  src/libjzenfire.o $zf_lib -lpthread -lrt
 
